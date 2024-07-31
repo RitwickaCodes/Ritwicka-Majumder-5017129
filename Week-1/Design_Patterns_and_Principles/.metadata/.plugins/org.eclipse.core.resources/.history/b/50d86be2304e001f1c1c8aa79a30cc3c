@@ -1,0 +1,10 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		//Creation of Word Document
+		DocumentFactory wordFactory = new WordDocumentFactory();
+		WordDocument wordDoc = (WordDocument)wordFactory.createDocument();
+		wordDoc.writeWordContent();
+	}
+}

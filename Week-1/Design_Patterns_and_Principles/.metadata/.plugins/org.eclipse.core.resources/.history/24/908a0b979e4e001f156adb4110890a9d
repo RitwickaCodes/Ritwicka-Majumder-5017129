@@ -1,0 +1,4 @@
+
+public interface WordDocument extends Document{
+	void writeWordContent();
+}

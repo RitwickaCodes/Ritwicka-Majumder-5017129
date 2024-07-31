@@ -1,0 +1,6 @@
+
+public class WordDocumentWriter implements WordDocument{
+	public void writeWordContent() {
+		System.out.println("Writing in word document");
+	}
+}

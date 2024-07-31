@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		//Creation of Word Document
+		DocumentFactory wordFactory = new WordDocumentFactory();
+		WordDocument wordDoc = (WordDocument)wordFactory.createDocument();
+		wordDoc.writeWordContent();
+		//Creation of Pdf Document
+		DocumentFactory pdfFactory = new PdfDocumentFactory();
+        PdfDocument pdfDoc = (PdfDocument) pdfFactory.createDocument();
+        pdfDoc.writePdfContent();
+        //Creation of Excel Document
+        DocumentFactory excelFactory = new ExcelDocumentFactory();
+        ExcelDocument excelDoc = (ExcelDocument) excelFactory.createDocument();
+        excelDoc.writeExcelContent();
+	}
+}

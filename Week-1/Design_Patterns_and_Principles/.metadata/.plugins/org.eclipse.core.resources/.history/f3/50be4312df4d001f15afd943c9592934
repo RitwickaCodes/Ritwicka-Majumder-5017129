@@ -1,0 +1,7 @@
+
+public class WordDocumentFactory extends DocumentFactory{
+	public void WordDocument createDocument() {
+		return new WordDocument();
+	}
+
+}

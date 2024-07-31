@@ -1,0 +1,7 @@
+
+public class ExcelDocumentWriter implements ExcelDocument {
+	public void writeExcelContent() {
+		System.out.println("Writing in excel document");
+	}
+
+}

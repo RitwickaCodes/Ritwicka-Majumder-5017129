@@ -1,0 +1,7 @@
+
+public class PdfDocumentWriter implements PdfDocument{
+	public void writePdfContent() {
+		System.out.println("Writing in pdf document");
+	}
+
+}

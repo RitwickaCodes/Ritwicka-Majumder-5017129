@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\ritwi\OneDrive\Desktop\Ritwicka-Majumder-5017129\Week-1\Algorithms_Data_Structures\.metadata\.plugins\org.eclipse.jdt.core
+2921698248.index
+4207606346.index
+3833508784.index
+3244873648.index
+1865797976.index
+532043339.index
+2717316604.index
+51267717.index
