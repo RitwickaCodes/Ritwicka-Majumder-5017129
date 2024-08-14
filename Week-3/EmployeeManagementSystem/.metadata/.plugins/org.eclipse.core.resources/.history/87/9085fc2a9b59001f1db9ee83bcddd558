@@ -1,0 +1,14 @@
+package com.example.EmployeeManagementSystem.repository;
+
+import com.example.EmployeeManagementSystem.model.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface DepartmentRepository extends JpaRepository<Department, Long> {
+
+    // Find departments by name
+    Department findByName(String name);
+
+    // Find departments whose name ends with a specific suffix
+    List<Department> findByNameEndingWith(String suffix);
+}

@@ -1,0 +1,24 @@
+package com.example.EmployeeManagementSystem.repository;
+
+import com.example.EmployeeManagementSystem.model.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import java.util.List;
+
+public interface DepartmentRepository extends JpaRepository<Department, Long> {
+
+    // Find departments by name
+    Department findByName(String name);
+
+    // Find departments whose name ends with a specific suffix
+    List<Department> findByNameEndingWith(String suffix);
+    
+    // Custom query to find departments by partial name using JPQL
+    @Query("SELECT d FROM Department d WHERE d.name LIKE %:name%")
+    List<Department> findDepartmentsByNameContaining(@Param("name") String name);
+
+    // Custom query to find all departments using native SQL
+    @Query(value = "SELECT * FROM departments", nativeQuery = true)
+    List<Department> findAllDepartmentsNative();
+}
